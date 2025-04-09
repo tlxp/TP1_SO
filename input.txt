@@ -1,0 +1,35 @@
+# Configuração do Algoritmo e Processos
+algorithm=FCFS                # Algoritmo de escalonamento: 
+                               # FCFS (First-Come First-Served)
+                               # SJF (Shortest Job First)
+                               # SJF_P (Shortest Job First Preemptive)
+                               # PRIO (Priority Scheduling)
+                               # PRIO_P (Priority Scheduling Preemptive)
+                               # RR (Round Robin)
+                               # EDF (Earliest Deadline First)
+                               # RM (Rate Monotonic)
+
+mode=static                   # Modo de operação: 
+                               # static (processos definidos no arquivo)
+                               # random (processos gerados aleatoriamente)
+
+quantum=3                     # Quantum para algoritmos que utilizam: 
+                               # Round Robin (número inteiro positivo)
+
+processes=5                   # Número total de processos a serem lidos (número inteiro positivo)
+
+# Definição dos Processos
+# ID  Chegada  Burst  Prioridade  Deadline  Período
+0  0      6      2          20        25        0   # Processo 0: Chegada no tempo 0, burst de 6, prioridade 2, deadline 20, não periódico
+1  1      4      1          15        20        0   # Processo 1: Chegada no tempo 1, burst de 4, prioridade 1, deadline 15, não periódico
+2  2      8      3          30        35        0   # Processo 2: Chegada no tempo 2, burst de 8, prioridade 3, deadline 30, não periódico
+3  3      5      2          25        30        1   # Processo 3: Chegada no tempo 3, burst de 5, prioridade 2, deadline 25, periódico
+4  4      3      4          10        15        1   # Processo 4: Chegada no tempo 4, burst de 3, prioridade 4, deadline 10, periódico
+
+# Legenda dos Atributos dos Processos:
+# ID: Identificador único do processo (número inteiro)
+# Chegada: Tempo em que o processo chega ao sistema (número inteiro não negativo)
+# Burst: Tempo que o processo precisa para ser executado (número inteiro positivo)
+# Prioridade: Nível de prioridade do processo (número inteiro positivo, menor número indica maior prioridade)
+# Deadline: Tempo limite para a conclusão do processo (número inteiro não negativo)
+# Período: Indica se o processo é periódico (1) ou não (0)
