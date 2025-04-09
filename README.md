@@ -1,45 +1,49 @@
-TP1_SO
-Simulador de Escalonamento de Processos
+# TP1_SO - Simulador de Escalonamento de Processos
+
 Este projeto implementa um simulador de algoritmos de escalonamento de processos, incluindo:
 
-FCFS (First Come First Serve)
-SJF (Shortest Job First)
-SJF Preemptivo
-Escalonamento por Prioridade (com e sem preempção)
-Round Robin
-EDF (Earliest Deadline First)
-Rate Monotonic
-Estrutura
-main.c: Interface principal que lê os dados dos processos e executa o algoritmo.
-scheduler.c: Implementações dos algoritmos de escalonamento.
-process.c: Estruturas e funções relacionadas aos processos.
-stats.c: Cálculo e exibição de estatísticas (tempo médio de espera, turnaround, etc.).
-Makefile: Compilação do projeto.
-README.md: Instruções e explicações.
-processes.txt: Arquivo de entrada de exemplo com a definição dos processos.
-Compilação
+- **FCFS** (First Come First Serve)
+- **SJF** (Shortest Job First)
+- **SJF Preemptivo**
+- **Escalonamento por Prioridade** (com e sem preempção)
+- **Round Robin**
+- **EDF** (Earliest Deadline First)
+- **Rate Monotonic**
+
+## Estrutura do Projeto
+
+- **main.c**: Interface principal que lê os dados dos processos e executa o algoritmo.
+- **scheduler.c**: Implementações dos algoritmos de escalonamento.
+- **process.c**: Estruturas e funções relacionadas aos processos.
+- **stats.c**: Cálculo e exibição de estatísticas (tempo médio de espera, turnaround, etc.).
+- **Makefile**: Arquivo para compilação do projeto.
+- **README.md**: Instruções e explicações.
+- **processes.txt**: Arquivo de entrada de exemplo com a definição dos processos.
+
+## Compilação
+
 Para compilar o projeto, utilize o comando:
 
-bash
-Run
-Copy code
+```bash
 make
+
 Este comando irá compilar todos os arquivos fonte e gerar o executável do simulador.
 
 Execução
 Após a compilação, você pode executar o simulador com o seguinte comando:
 
 bash
-Run
-Copy code
+Copiar
+Editar
 ./simulador
 Certifique-se de que o arquivo processes.txt está no mesmo diretório que o executável, pois o simulador irá ler os dados dos processos a partir deste arquivo.
 
 Formato do Arquivo de Entrada
 O arquivo processes.txt deve seguir o seguinte formato:
 
-Run
-Copy code
+plaintext
+Copiar
+Editar
 # Configuração do Algoritmo e Processos
 algorithm=FCFS                # Algoritmo de escalonamento
 mode=static                   # Modo de operação: static ou random
@@ -62,7 +66,11 @@ Resultados
 Após a execução, o simulador irá gerar um relatório detalhado das estatísticas de desempenho dos processos, incluindo:
 
 Tempo médio de espera
+
 Tempo médio de turnaround
+
 Taxa de utilização da CPU
+
 Taxa de misses de deadline
+
 Os resultados serão exibidos no console e também salvos em um arquivo chamado output.txt.
