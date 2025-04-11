@@ -60,7 +60,7 @@ make
 ### 📂 Modo Linha de Comando
 
 ```bash
-./main input.txt
+./simulador
 ```
 
 ---
