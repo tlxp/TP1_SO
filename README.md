@@ -134,4 +134,5 @@ output.txt
 - No modo CLI, o algoritmo deve ser definido manualmente no código (`main.c`), caso não use a GUI.
 
 ---
-Só queria ver se consigo dar commit de alguma cena.
+
+Só pra  ver se consegui por o git a funcionar.
