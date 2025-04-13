@@ -1,5 +1,4 @@
 
-
 # TP1 - Simulador de Escalonamento de Processos
 
 Este projeto é um simulador de algoritmos de escalonamento de processos, desenvolvido como parte da disciplina de Sistemas Operacionais.
@@ -134,4 +133,3 @@ output.txt
 - No modo CLI, o algoritmo deve ser definido manualmente no código (`main.c`), caso não use a GUI.
 
 ---
-Só queria ver se consigo dar commit de alguma cena.
